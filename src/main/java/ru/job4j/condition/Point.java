@@ -13,6 +13,6 @@ public class Point {
 
     public static void main(String[] args) {
         double result = Point.distance(2, 5, 6, 7);
-        System.out.println("Расстояние между точками в системе координат: " + result);
+        System.out.println("Расстояние между точками в системе координат ровно: " + result);
     }
 }
