@@ -14,9 +14,9 @@ public class Fit {
     public static void main(String[] args) {
         short heightMen = 175;
         double man = Fit.manWeight(heightMen);
-        System.out.println("Ваш идеальный мужской вес составляет " + man);
+        System.out.println("Ваш идеальный мужской вес " + man);
         short heightWoman = 175;
         double woman = Fit.womanWeight(heightWoman);
-        System.out.println("Ваш идеальный женский вес составляет " + woman);
+        System.out.println("Ваш идеальный женский вес " + woman);
     }
 }
