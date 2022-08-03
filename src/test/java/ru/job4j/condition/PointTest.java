@@ -19,7 +19,7 @@ public class PointTest {
     }
 
     @Test
-    public void when1533to1236then4() {
+    public void when1533to1236then4dot24() {
         int x1 = 15;
         int x2 = 33;
         int y1 = 12;
@@ -30,7 +30,7 @@ public class PointTest {
     }
 
     @Test
-    public void when15303to12360then57() {
+    public void when15303to12360then57dot07() {
         int x1 = 15;
         int x2 = 303;
         int y1 = 12;
