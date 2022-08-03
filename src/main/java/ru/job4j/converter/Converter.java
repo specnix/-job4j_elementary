@@ -12,8 +12,8 @@ public class Converter {
 
     public static void main(String[] args) {
         float euro = Converter.rubleToEuro(140);
-        System.out.println("Ваша сумма в евро: " + euro + '€');
+        System.out.println("Cумма в евро: " + euro + '€');
         float dollar = Converter.rubleToDollar(120);
-        System.out.println("Ваша сумма в долларах: " + dollar + '$');
+        System.out.println("Cумма в долларах: " + dollar + '$');
     }
 }
