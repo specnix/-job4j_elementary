@@ -8,6 +8,6 @@ public class Max {
 
     public static void main(String[] args) {
         int result = Max.comparison(7, 5);
-        System.out.println("Ответ: " + result + " максимальное ");
+        System.out.println("Ответ: " + result + " максимальное");
     }
 }
