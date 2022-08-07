@@ -1,7 +1,5 @@
 package ru.job4j.condition;
 
-//сравнить два числа и получить максимальное из них
-
 public class Max {
     public  static int comparison(int left, int right) {
         int result = left >= right ? left : right;
