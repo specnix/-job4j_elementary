@@ -10,7 +10,7 @@ public class LogicNot {
         return num > 0;
     }
 
-    public  static boolean notEvent(int num) {
+    public  static boolean notEven(int num) {
         return !isEven(num);
     }
 
@@ -19,20 +19,19 @@ public class LogicNot {
     }
 
     public static boolean notEvenAndPositive(int num) {
-        return !isEven(num) && isPositive(num);
+        return notEven(num) && isPositive(num);
     }
 
     public static boolean evenOrNotPositive(int num) {
-        return isEven(num) || !isPositive(num);
+        return isEven(num) || notPositive(num);
     }
 
     public static void main(String[] args) {
         System.out.println(isEven(2));
         System.out.println(isPositive(2));
-        System.out.println(notEvent(1));
+        System.out.println(notEven(1));
         System.out.println(notPositive(-1));
         System.out.println(notEvenAndPositive(1));
         System.out.println(evenOrNotPositive(-1));
     }
-
 }
