@@ -1,36 +1,25 @@
 package ru.job4j.condition;
 
-import org.junit.Assert;
-import org.junit.Test;
-
-import static org.junit.Assert.*;
+import org.junit.jupiter.api.Test;
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.offset;
 
 public class SqAreaTest {
-
     @Test
-    public void whenK2P6Then0dot12() {
-        double k = 2;
+    public void whenP6K2Square2() {
+        int expected = 2;
         int p = 6;
-        double expected = 0.12;
-        double out = SqArea.square(k, p);
-        Assert.assertEquals(expected, out, 0.01);
+        double k = 2;
+        double out = SqArea.square(p, k);
+        assertThat(out).isCloseTo(expected, offset(0.01));
     }
 
     @Test
-    public void whenK5P10Then0dot51() {
-        double k = 5;
-        int p = 10;
-        double expected = 0.51;
-        double out = SqArea.square(k, p);
-        Assert.assertEquals(expected, out, 0.01);
-    }
-
-    @Test
-    public void whenK5P22Then0dot25() {
-        double k = 5;
-        int p = 22;
-        double expected = 0.25;
-        double out = SqArea.square(k, p);
-        Assert.assertEquals(expected, out, 0.01);
+    public void whenP4K1Square1() {
+        int expected = 1;
+        int p = 4;
+        double k = 1;
+        double out = SqArea.square(p, k);
+        assertThat(out).isCloseTo(expected, offset(0.01));
     }
 }
