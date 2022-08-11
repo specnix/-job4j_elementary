@@ -8,8 +8,8 @@ public class ChessBoard {
         if (isValid(x1) && isValid(x2)
                 && isValid(y1) && isValid(y2)) {
                 if (Math.abs(x2 - x1) == Math.abs(y2 - y1)) {
-                    rsl = Math.abs(x2 - x1);
-                    rsl = rsl == 0 ? Math.abs(y2 - y1) : rsl;
+                rsl = Math.abs(x2 - x1);
+                System.out.println("кол-во клеток, которое прошла фигура: " + rsl);
             }
         }
         return rsl;
@@ -20,7 +20,7 @@ public class ChessBoard {
     }
 
     public static void main(String[] args) {
-        System.out.println(way(0, 0, 7, 7));
-        System.out.println(way(0, 0, 8, 8));
+        System.out.println(way(2, 7, 7, 2));
+        System.out.println(way(7, 7, 0, 0));
     }
 }
