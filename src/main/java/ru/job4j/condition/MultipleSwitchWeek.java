@@ -10,7 +10,7 @@ package ru.job4j.condition;
                 case "Пятница", "Friday" -> 5;
                 case "Суббота", "Saturday" -> 6;
                 case "Воскресенье", "Sunday" -> 7;
-                default -> 0;
+                default -> -1;
             };
         }
 
