@@ -13,8 +13,4 @@ package ru.job4j.condition;
                 default -> -1;
             };
         }
-
-        public static void main(String[] args) {
-            System.out.println(numberOfDay("Sunday"));
-        }
     }
