@@ -1,3 +1,4 @@
+/*
 package ru.job4j.converter;
 
 import org.junit.jupiter.api.Test;
@@ -24,4 +25,4 @@ public class ConverterTest {
         float eps = 0.0001f;
         assertThat(out).isEqualTo(expected);
     }
-}
+}*/
