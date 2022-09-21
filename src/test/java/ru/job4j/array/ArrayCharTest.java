@@ -19,4 +19,12 @@ public class ArrayCharTest {
         boolean result = ArrayChar.startsWith(word, pref);
         assertThat(result).isFalse();
     }
+
+    @Test
+    public void whenNotStartWithWordThenFalse() {
+        char[] word = {'H', 'i'};
+        char[] pref = {'H', 'e', 'l', 'l', 'o'};
+        boolean result = ArrayChar.startsWith(word, pref);
+        assertThat(result).isFalse();
+    }
 }
