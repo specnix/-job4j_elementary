@@ -5,12 +5,11 @@ import static ru.job4j.array.SwitchArray.swap;
 public class SortSelected {
 
     public static int[] sort(int[] data) {
-        for (int left = 0; left < data.length - 1; left++) {
-                int min = MinDiapason.findMin(data, left, data.length - 1);
-                int index = FindLoop.indexInRange(data, min, left, data.length - 1);
-                swap(data, left, index);
-
-            }
+        for (int i = 0; i < data.length - 1; i++) {
+                int min = MinDiapason.findMin(data, i, data.length - 1);
+                int index = FindLoop.indexInRange(data, min, i, data.length - 1);
+                swap(data, i, index);
+       }
         return data;
     }
 }
